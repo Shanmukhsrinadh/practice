@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://github.com/Shanmukhsrinadh/Portfolio/blob/main/img/IMG_20230309_004942_142.jpg?raw=true">
+    <title>My Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            color: #0056b3;
+        }
+
+        /* Centering content */
+        .centered {
+            text-align: center;
+        }
+
+        /* Navbar */
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            background-color: #0056b3;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #003f87;
+            border-radius: 5px;
+        }
+
+        /* Table styles */
+        table {
+            width: 45%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        /* Form Styles */
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        form input[type="text"],
+        form input[type="number"],
+        form input[type="email"],
+        form input[type="password"],
+        form input[type="date"],
+        form input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form input[type="button"] {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form input[type="button"]:hover {
+            background-color: #003f87;
+        }
+
+        /* Checkbox and Radio button styling */
+        form input[type="checkbox"],
+        form input[type="radio"] {
+            margin: 0 5px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            form {
+                width: 80%;
+            }
+
+            table {
+                width: 80%;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="centered">
+        <h1>Welcome</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <table>
+        <tr>
+            <th>Reg.no</th>
+            <th>Name</th>
+            <th>Batch</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Shannu</td>
+            <td>UI/UX</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <form>
+        <label for="fname">Enter your name:</label>
+        <input type="text" id="fname" placeholder="First Name">
+
+        <label for="sname">Enter your name:</label>
+        <input type="text" id="sname" placeholder="Second Name">
+
+        <label for="phone">Enter your phone number:</label>
+        <input type="number" id="phone" placeholder="Your mobile number">
+
+        <label for="email">Enter your Email id:</label>
+        <input type="email" id="email" placeholder="Your Email id">
+
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" placeholder="Type your password">
+
+        <label for="date">Choose Date:</label>
+        <input type="date" id="date">
+
+        <label for="doc">Please upload your document:</label>
+        <input type="file" id="doc">
+
+        <label>Qualification:</label><br/>
+        <label for="10th">10th:</label><input type="checkbox" id="10th">
+        <label for="12th">12th:</label><input type="checkbox" id="12th">
+        <label for="bsc">BSC:</label><input type="checkbox" id="bsc">
+        <label for="mca">MCA:</label><input type="checkbox" id="mca">
+        <label for="btech">B.tech:</label><input type="checkbox" id="btech"><br>
+
+        <label>Select Your Gender:</label><br/>
+        <label for="male">Male</label><input type="radio" id="male" name="gender">
+        <label for="female">Female</label><input type="radio" id="female" name="gender">
+        <label for="other">Other</label><input type="radio" id="other" name="gender"><br>
+
+        <input type="button" value="Submit">
+    </form>
+
+</body>
+</html>

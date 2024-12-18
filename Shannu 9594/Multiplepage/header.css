@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;    
+    background-color: #01010e;
+    color: #FFFFFF;
+}
+.header ul {
+    display: flex;
+    margin-left: 85%;
+    justify-content
+    margin: 0;
+    padding: 0;
+}
+
+.header ul a {
+    list-style-type: none;
+    padding: 2%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
